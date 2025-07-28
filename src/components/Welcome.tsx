@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const examplePrompts = [
   'Help me brainstorm a fantasy plot about a lost city.',
