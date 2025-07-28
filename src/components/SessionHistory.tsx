@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const LOCAL_STORAGE_KEY = 'sessionHistory';
 const FOLDER_KEY = 'sessionFolders';
@@ -10,7 +10,7 @@ function getSessions() {
     return [];
   }
 }
-function saveSessions(sessions) {
+function saveSessions(sessions: any[]) {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(sessions));
 }
 function getFolders() {
@@ -20,7 +20,7 @@ function getFolders() {
     return [];
   }
 }
-function saveFolders(folders) {
+function saveFolders(folders: { id: string, name: string, expanded: boolean }[]) {
   localStorage.setItem(FOLDER_KEY, JSON.stringify(folders));
 }
 

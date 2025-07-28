@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import FavouritePrompts from './FavouritePrompts';
 import SessionHistory from './SessionHistory';
 

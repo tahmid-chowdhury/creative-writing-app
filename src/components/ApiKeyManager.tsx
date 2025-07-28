@@ -234,7 +234,7 @@ export default function ApiKeyManager({
 					textAlign: 'center',
 				}}
 			>
-				{MODELS.find(m => m.id === model?.desc)}
+				{MODELS.find(m => m.id === model)?.desc}
 			</div>
 			{apiKey ? (
 				<div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const LOCAL_STORAGE_KEY = 'favouritePrompts';
 
@@ -89,4 +89,3 @@ export default function FavouritePrompts({ onPromptSelect }: { onPromptSelect: (
     </div>
   );
 }
-
